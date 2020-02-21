@@ -47,12 +47,10 @@ func (client *Client) Light(state, value int) error {
 	req.Header.Add("Origin", "http://www.loytec.com")
 	req.Header.Add("SOAPAction", "http://opcfoundation.org/webservices/XMLDA/1.0/Write")
 	req.Header.Add("Referer", "http://www.loytec.com/lweb802/?project=lstudio%2FSystem.LROC_LROC111.LWEBMobile_Seg04.lweb2&address=10.10.160.111&port=80&https=false")
-	fmt.Printf("\nRequest: \n %s \n\n", req)
-	resp, err := httpclient.Do(req)
+	_, err = httpclient.Do(req)
 	if err != nil {
 		return err
 	}
-	fmt.Printf("Response: \n %s \n\n", resp)
 
 	return nil
 }

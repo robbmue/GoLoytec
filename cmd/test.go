@@ -30,9 +30,9 @@ func main() {
 		if i == 5{
 			for {
 				x.Light(1,100)
-				time.Sleep(time.Second*1)
+				time.Sleep(time.Millisecond * 100)
 				x.Light(0,0)
-				time.Sleep(time.Second*1)
+				time.Sleep(time.Millisecond * 100)
 			}
 		}
 		x.Sunblind(client.Direction(i), params[0], params[1], params[2])

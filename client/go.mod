@@ -1,3 +1,3 @@
-module github.com/robbmue/GoLoytec
+module github.com/robbmue/GoLoytec/client
 
 go 1.12

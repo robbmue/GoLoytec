@@ -16,7 +16,7 @@ func main() {
 	for{
 		fmt.Println("Sunblinds [TOP(0)|UP(1)|DOWN(2)|BOTTOM(3)]")
 		input, _, _ := reader.ReadLine()
-		var params [] int
+		params := make([]int, 3)
 		i,_ := strconv.Atoi(string(input))
 		if i == 4 {
 			fmt.Println("Insert custom params (3):")

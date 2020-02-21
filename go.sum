@@ -1,2 +1,4 @@
 github.com/robbmue/GoLoytec/client v0.0.0-20200221165142-a9c52268fba9 h1:kD/MGomQTNEXWpQTOoz470yH/8tjG5m5JEuUPeewyfQ=
 github.com/robbmue/GoLoytec/client v0.0.0-20200221165142-a9c52268fba9/go.mod h1:lYbyu3ZZk10SaAWtCE0Gl525KonnQDUASf1Kwpqk+i8=
+github.com/robbmue/GoLoytec/client v0.0.0-20200221170543-ebd8e3d0ddb1 h1:jVxDFGiP9gpKs2VlTmXrwsYS8TlOdE9NTUC5+d3GiJE=
+github.com/robbmue/GoLoytec/client v0.0.0-20200221170543-ebd8e3d0ddb1/go.mod h1:lYbyu3ZZk10SaAWtCE0Gl525KonnQDUASf1Kwpqk+i8=

@@ -1,14 +1,15 @@
-package cmd
+package main
 
 import (
 	"bufio"
 	"fmt"
+	client "github.com/robbmue/GoLoytec/client"
 	"os"
 	"strconv"
 )
 
 func main() {
-	x := Init("10.10.160.111",80)
+	x := client.Init("10.10.160.111",80)
 	x.Ping()
 	reader := bufio.NewReader(os.Stdin)
 	for{

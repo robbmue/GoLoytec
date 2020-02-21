@@ -34,7 +34,7 @@ func (client *Client) GetAddress() string {
 	return fmt.Sprintf("http://%s:%v/DA", client.Address, client.Port)
 }
 
-func (client *Client) Sunblind(direction Direction) error {
+func (client *Client) Sunblind(direction Direction, custom ...int) error {
 
 	var buf bytes.Buffer
 
@@ -54,6 +54,12 @@ func (client *Client) Sunblind(direction Direction) error {
 		buf.WriteString(client.parsePayload(5, 0, 10))
 	case Bottom:
 		buf.WriteString(client.parsePayload(5, 90, 100))
+	case Custom:
+		if len(custom) != 3 {
+			return nil
+		}
+		buf.WriteString(client.parsePayload(custom[0], custom[1], custom[2]))
+
 	default:
 		return nil
 	}

@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func (client *Client) parseLightPayload(lampZoneState int, lampZoneValue float32) string {
+func (client *Client) parseLightPayload(lampZoneState, lampZoneValue int) string {
 	payload := `<?xml
 	version = "1.0"
 	encoding = "utf-8"?>
@@ -36,11 +36,11 @@ xsi:
 	ItemName = "lampZoneValue"
 	ClientItemHandle = "gen0x01200092-2" > < Value
 xsi:
-	type = "xsd:double" > %f </Value > </Items > </ItemList > </Write > < / soap:Body > < / soap:Envelope > `
+	type = "xsd:double" > %v </Value > </Items > </ItemList > </Write > < / soap:Body > < / soap:Envelope > `
 	return fmt.Sprintf(payload, lampZoneState, lampZoneValue)
 }
 
-func (client *Client) Light(state int, value float32) error {
+func (client *Client) Light(state, value int) error {
 	var buf bytes.Buffer
 
 	httpclient := &http.Client{

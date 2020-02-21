@@ -8,3 +8,5 @@ github.com/robbmue/GoLoytec/client v0.0.0-20200221173815-9dac107f91b5 h1:J9W2w1i
 github.com/robbmue/GoLoytec/client v0.0.0-20200221173815-9dac107f91b5/go.mod h1:lYbyu3ZZk10SaAWtCE0Gl525KonnQDUASf1Kwpqk+i8=
 github.com/robbmue/GoLoytec/client v0.0.0-20200221173929-79e235e9a4df h1:SPm6Bh4+VbJg0OcHtT2vHSsjcA3+t1TFOzhGvs6q3jI=
 github.com/robbmue/GoLoytec/client v0.0.0-20200221173929-79e235e9a4df/go.mod h1:lYbyu3ZZk10SaAWtCE0Gl525KonnQDUASf1Kwpqk+i8=
+github.com/robbmue/GoLoytec/client v0.0.0-20200221174017-3616aeccf4b2 h1:I9QMI036QzJImw1p3XOQUIx+i8+Q/UN8tRIBBc/F6G0=
+github.com/robbmue/GoLoytec/client v0.0.0-20200221174017-3616aeccf4b2/go.mod h1:lYbyu3ZZk10SaAWtCE0Gl525KonnQDUASf1Kwpqk+i8=

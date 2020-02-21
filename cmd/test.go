@@ -3,7 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
-	client "github.com/robbmue/GoLoytec/client"
+	"github.com/robbmue/GoLoytec/client"
 	"os"
 	"strconv"
 )

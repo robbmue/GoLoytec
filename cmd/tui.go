@@ -33,6 +33,7 @@ func textUserInterface(clientInstance *client.Client) {
 		),
 		logoBox,
 	)
+	header.SetBorder(true)
 
 	discoButton := tui.NewButton("[toggle]")
 	discoButton.OnActivated(

@@ -29,7 +29,8 @@ func textUserInterface(clientInstance *client.Client) {
 	header := tui.NewVBox(
 		tui.NewHBox(
 			namebox,
-			tui.NewLabel("Press ESC to exit"),
+			tui.NewLabel("Press TAB to navigate, "),
+			tui.NewLabel("ESC to exit"),
 		),
 		logoBox,
 	)

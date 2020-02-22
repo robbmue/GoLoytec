@@ -14,6 +14,8 @@ __ _  ___ | |     ___  _   _| |_ ___  ___
 \__, |\___/|______\___/ \__, |\__\___|\___|
 __/ |                   __/ |             
 |___/                   |___/
+
+Made by Kian, Robin & Nico             2020
 `
 
 func textUserInterface(clientInstance *client.Client) {

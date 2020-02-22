@@ -1,6 +1,7 @@
 package main
 
-import(
+import (
+	"fmt"
 	"os"
 	"strconv"
 
@@ -54,6 +55,8 @@ func commandInterface(clientInstance *client.Client) {
 		}
 	case "disco":
 		discoMode(clientInstance)
+	case "help":
+		fmt.Println("Commands:\n\tlight\n\t\ton\n\t\toff\n\t\tset <int>\n\tblind \n\t\ttop\n\t\tbottom\n\t\tset <int>\n\t\t\t--rotate <int> (optional)\n\tdisco\n\thelp")
 	default:
 		exitOnFail()
 	}

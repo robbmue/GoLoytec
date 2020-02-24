@@ -29,13 +29,6 @@ func (client *Client) parseLightPayload(lampZoneState, lampZoneValue int) string
 func (client *Client) Light(state, value int) error {
 	var buf bytes.Buffer
 
-	httpclient := &http.Client{
-		Transport:     nil,
-		CheckRedirect: nil,
-		Jar:           nil,
-		Timeout:       0,
-	}
-
 	buf.WriteString(client.parseLightPayload(state, value))
 
 	err := sendRequest(buf)

@@ -35,6 +35,12 @@ func (client *Client) GetAddress() string {
 }
 
 func (client *Client) sendRequest(buf bytes.Buffer) error {
+	httpclient := &http.Client{
+		Transport:     nil,
+		CheckRedirect: nil,
+		Jar:           nil,
+		Timeout:       0,
+	}
 	req, err := http.NewRequest("POST", client.GetAddress(), &buf)
 	if err != nil {
 		return err

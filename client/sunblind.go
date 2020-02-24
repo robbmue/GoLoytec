@@ -33,13 +33,6 @@ func (client *Client) Sunblind(direction Direction, custom ...int) error {
 
 	var buf bytes.Buffer
 
-	httpclient := &http.Client{
-		Transport:     nil,
-		CheckRedirect: nil,
-		Jar:           nil,
-		Timeout:       0,
-	}
-
 	switch direction {
 	case Top:
 		buf.WriteString(client.parseSunblindPayload(5, 0, 0))

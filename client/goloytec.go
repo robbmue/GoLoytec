@@ -23,7 +23,7 @@ func (client *Client) Ping() error {
 		return err
 	}
 	defer resp.Body.Close()
-	body, err := ioutil.ReadAll(resp.Body)
+	_, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		return err
 	}

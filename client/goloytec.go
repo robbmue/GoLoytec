@@ -13,8 +13,8 @@ type Client struct {
 	Auth    string
 }
 
-func Init(addr string, port int) *Client {
-	return &Client{Address: addr, Port: port}
+func Init(addr string, port int, auth string) *Client {
+	return &Client{Address: addr, Port: port, Auth: auth}
 }
 
 func (client *Client) Ping() error {

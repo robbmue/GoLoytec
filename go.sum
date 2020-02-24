@@ -60,6 +60,8 @@ github.com/robbmue/GoLoytec/client v0.0.0-20200224104156-b2b3155d1616 h1:QyC/fgq
 github.com/robbmue/GoLoytec/client v0.0.0-20200224104156-b2b3155d1616/go.mod h1:lYbyu3ZZk10SaAWtCE0Gl525KonnQDUASf1Kwpqk+i8=
 github.com/robbmue/GoLoytec/client v0.0.0-20200224104346-f5076db54a77 h1:PvzSE+97gofXaVTtaLa9s4yCioMCQueZPyTAnlNTKnE=
 github.com/robbmue/GoLoytec/client v0.0.0-20200224104346-f5076db54a77/go.mod h1:lYbyu3ZZk10SaAWtCE0Gl525KonnQDUASf1Kwpqk+i8=
+github.com/robbmue/GoLoytec/client v0.0.0-20200224104455-98f5c3f4e301 h1:DUkoFrQLvuauGzFrKSmEmhJiyVNz+dMwCU4Q0rJCpms=
+github.com/robbmue/GoLoytec/client v0.0.0-20200224104455-98f5c3f4e301/go.mod h1:lYbyu3ZZk10SaAWtCE0Gl525KonnQDUASf1Kwpqk+i8=
 github.com/smartystreets/assertions v0.0.0-20180927180507-b2de0cb4f26d/go.mod h1:OnSkiWE9lh6wB0YB77sQom3nweQdgAjqCqsofrRNTgc=
 github.com/smartystreets/goconvey v0.0.0-20181108003508-044398e4856c/go.mod h1:XDJAKZRPZ1CvBcN2aX5YOUTYGHki24fSF0Iv48Ibg0s=
 golang.org/x/text v0.3.0 h1:g61tztE5qeGQ89tm6NTjjM9VPIm088od1l6aSorWRWg=

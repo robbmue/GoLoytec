@@ -59,5 +59,5 @@ func (config *Conf) setRoom(context ...string) *client.Client {
 			}
 		}
 	}
-	return client.Init(room.Address, room.Port)
+	return client.Init(room.Address, room.Port, room.Auth)
 }

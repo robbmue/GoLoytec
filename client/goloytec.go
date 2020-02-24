@@ -34,7 +34,7 @@ func (client *Client) GetAddress() string {
 	return fmt.Sprintf("http://%s:%v/DA", client.Address, client.Port)
 }
 
-func (client *Client) sendRequest(buf bytes.Buffer) error {
+func (client *Client) SendRequest(buf bytes.Buffer) error {
 	httpclient := &http.Client{
 		Transport:     nil,
 		CheckRedirect: nil,

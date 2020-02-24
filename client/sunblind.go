@@ -53,7 +53,7 @@ func (client *Client) Sunblind(direction Direction, custom ...int) error {
 		return nil
 	}
 
-	err := sendRequest(buf)
+	err := client.SendRequest(buf)
 	if err != nil {
 		return err
 	}

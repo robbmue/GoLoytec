@@ -30,7 +30,7 @@ func (client *Client) Light(state, value int) error {
 
 	buf.WriteString(client.parseLightPayload(state, value))
 
-	err := sendRequest(buf)
+	err := client.SendRequest(buf)
 	if err != nil {
 		return err
 	}

@@ -1,0 +1,5 @@
+default: "consulting"
+room:
+- name: "consulting"
+  address: "10.10.160.111"
+  port: 80

@@ -3,17 +3,19 @@ package main
 import (
 	"fmt"
 	"os"
-
-	"github.com/robbmue/GoLoytec/client"
 )
 
 func main() {
-	x := client.Init("10.10.160.111", 80)
-	x.Ping()
+	config := new(Conf).getConf()
+	defaultClient := config.setRoom()
+	if defaultClient.Ping() != nil {
+		fmt.Println("No Network")
+		os.Exit(1)
+	}
 	if len(os.Args) == 1 {
-		textUserInterface(x)
+		textUserInterface(defaultClient)
 	} else {
-		commandInterface(x)
+		commandInterface(defaultClient)
 	}
 }
 

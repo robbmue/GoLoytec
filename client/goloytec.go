@@ -25,7 +25,6 @@ func (client *Client) Ping() error {
 	if err != nil {
 		return err
 	}
-	fmt.Println(body)
 	return nil
 }
 

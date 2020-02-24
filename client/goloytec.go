@@ -48,7 +48,7 @@ func (client *Client) SendRequest(buf bytes.Buffer) error {
 	req.Header.Add("Authorization", client.Auth)
 	req.Header.Add("Origin", "http://www.loytec.com")
 	req.Header.Add("SOAPAction", "http://opcfoundation.org/webservices/XMLDA/1.0/Write")
-	req.Header.Add("Referer", fmt.Sprintf("http://www.loytec.com/lweb802/?project=lstudio%2FSystem.LROC_LROC111.LWEBMobile_Seg03.lweb2&address=%v&port=%s&https=false", client.Address, client.Port))
+	req.Header.Add("Referer", fmt.Sprintf("http://www.loytec.com/lweb802/?project=lstudio%2FSystem.LROC_LROC111.LWEBMobile_Seg08.lweb2&address=%v&port=%s&https=false", client.Address, client.Port))
 	_, err = httpclient.Do(req)
 	if err != nil {
 		return err

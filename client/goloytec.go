@@ -33,6 +33,19 @@ func (client *Client) GetAddress() string {
 	return fmt.Sprintf("http://%s:%v/DA", client.Address, client.Port)
 }
 
+func sendRequest(buf bytes.Buffer) error {
+	req, err := http.NewRequest("POST", client.GetAddress(), &buf)
+	if err != nil {
+		return err
+	}
+	req.Header.Add("Authorization", "Basic b3BlcmF0b3I6b3BlcmF0b3I=")
+	req.Header.Add("Origin", "http://www.loytec.com")
+	req.Header.Add("SOAPAction", "http://opcfoundation.org/webservices/XMLDA/1.0/Write")
+	req.Header.Add("Referer", fmt.Sprintf("http://www.loytec.com/lweb802/?project=lstudio%2FSystem.LROC_LROC111.LWEBMobile_Seg04.lweb2&address=%v&port=%s&https=false", client.Address, client.Port))
+	_, err = httpclient.Do(req)
+	if err != nil {
+		return err
+	}
 
-
-
+	return nil
+}

@@ -6,7 +6,6 @@ import (
 	"net/http"
 )
 
-
 func (client *Client) parseSunblindPayload(funcZone, rotZone, posZone int) string {
 	payload := `<?xml version="1.0" encoding="utf-8"?>
 				<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
@@ -62,15 +61,7 @@ func (client *Client) Sunblind(direction Direction, custom ...int) error {
 		return nil
 	}
 
-	req, err := http.NewRequest("POST", client.GetAddress(), &buf)
-	if err != nil {
-		return err
-	}
-	req.Header.Add("Authorization", "Basic b3BlcmF0b3I6b3BlcmF0b3I=")
-	req.Header.Add("Origin", "http://www.loytec.com")
-	req.Header.Add("SOAPAction", "http://opcfoundation.org/webservices/XMLDA/1.0/Write")
-	req.Header.Add("Referer", "http://www.loytec.com/lweb802/?project=lstudio%2FSystem.LROC_LROC111.LWEBMobile_Seg04.lweb2&address=10.10.160.111&port=80&https=false")
-	_, err = httpclient.Do(req)
+	err = sendRequest(buf)
 	if err != nil {
 		return err
 	}

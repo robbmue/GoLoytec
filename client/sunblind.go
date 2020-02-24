@@ -3,7 +3,6 @@ package client
 import (
 	"bytes"
 	"fmt"
-	"net/http"
 )
 
 func (client *Client) parseSunblindPayload(funcZone, rotZone, posZone int) string {

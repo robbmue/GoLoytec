@@ -3,4 +3,4 @@ room:
 - name: "consulting"
   address: "10.10.160.111"
   port: 80
-  auth: b3BlcmF0b3I6b3BlcmF0b3I=
+  auth: "b3BlcmF0b3I6b3BlcmF0b3I="

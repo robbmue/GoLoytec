@@ -18,6 +18,7 @@ type Room struct {
 	Name    string `yaml:"name"`
 	Address string `yaml:"address"`
 	Port    int    `yaml:"port"`
+	Auth    string `yaml:"auth"`
 }
 
 func (c *Conf) getConf() *Conf {
